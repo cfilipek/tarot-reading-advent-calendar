@@ -1,8 +1,13 @@
 import React from 'react';
 
 class Modal extends React.Component {
+  state = {
+    isMobile: window.innerWidth < 768,
+  };
+
   render() {
     if (this.props.isOpen === false) return null;
+    const isMobile = this.state.isMobile;
 
     return (
       <div className="modal">
@@ -13,6 +18,7 @@ class Modal extends React.Component {
           ></div>
           <div
             className="modal__body"
+            {...(isMobile && { onClick: e => this.close(e) })}
             style={{ backgroundColor: `${this.props.color}` }}
           >
             {this.props.children}

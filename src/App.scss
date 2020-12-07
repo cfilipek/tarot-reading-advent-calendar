@@ -121,10 +121,15 @@ a {
   }
 
   &__body {
-    padding: 50px;
+    padding: 25px;
     height: 80%;
     color: #333333;
-    font-size: 14px;
+    font-size: 12px;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 14px;
+      padding: 50px;
+    }
   }
 
   &__footer {
