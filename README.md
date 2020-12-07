@@ -2,6 +2,8 @@
 
 YouTube Tutorial coming soon!!
 
+The site can be viewed at this [link](https://cfilipek.github.io/tarot-reading-advent-calendar/)! Get your reading of the day :D
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
